@@ -1,7 +1,7 @@
 class Racional
-  attr_reader :numerador, :denominador
+  attr_reader :num, :denom
   def initialize(n, d)
-    @numerador = n / n.gcd(d)
-    @denominador = d / n.gcd(d)
+    @num = n / n.gcd(d)
+    @denom = d / n.gcd(d)
   end
 end
